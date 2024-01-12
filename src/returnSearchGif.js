@@ -3,7 +3,6 @@ export default async function returnSearchGifs() {
     const imagesContainer = document.querySelector('.search__images-container');
     imagesContainer.innerHTML = '';
 
-
     function errorhandler() {
         if ( ! document.querySelector('.search__error-message')) {
             const errorMsg = document.createElement('div');

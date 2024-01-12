@@ -11,7 +11,6 @@ export default async function getTrendingGifs() {
         }
     }
 
-
     async function getTrendingGifs() {
 
         try {

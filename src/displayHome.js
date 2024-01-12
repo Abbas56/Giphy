@@ -9,10 +9,6 @@ export default async function displayHome() {
     gif.src = await getRandomGif();
     rand.insertBefore(gif, nextButton);
 
-
-    //when I press next, immediately display the loading svg!!!
-
-
     function errorHandler () {
         if (document.querySelector('.home__error-message') == null) {
             const errorMsg = document.createElement('div');
