@@ -4,37 +4,37 @@
         <meta charset="utf-8" />
         <title>Giphy</title>
         <link rel="stylesheet" href="/src/styles.css">
-        <!--<script src="main.js" defer></script>-->
+        <script src="main.js" defer></script>
     </head>
     <body>
         <header>
-            <h1>GIPHY</h1>
+            <h1 class ="title">GIPHY</h1>
         </header>
         <nav>
-            <ul>
-                <li class = "active"><button class = "random__button"><img src = "gallery-wide-svgrepo-com.svg" alt="homepage button"></button></li>
-                <li><button class = "search__button"><img src = "search-svgrepo-com.svg" alt="search button"></button></li>
-                <li><button class = "trending__button"><img src = "trending-up-svgrepo-com.svg" alt="trending button"></button></li>
+            <ul class = "navigation">
+                <li class = "navigation__random-li --active"><button class = "button button__nav-random"><img src = "gallery-wide-svgrepo-com.svg" alt="homepage button"></button></li>
+                <li class = "navigation__search-li"><button class = "button button__nav-search"><img src = "search-svgrepo-com.svg" alt="search button"></button></li>
+                <li class = "navigation__trending-li"><button class = "button button__nav-trending"><img src = "trending-up-svgrepo-com.svg" alt="trending button"></button></li>
             </ul>
         </nav>
         <main>
             <section class = "random">
-                <h2>Random</h2>
-                <button class = "btn">Next</button>
+                <h2 class = "random__heading">Random</h2>
+                <button class = "button button__random">Next</button>
             </section>
 
             <section class = "search">
-                <h2>Finder</h2>
+                <h2 class = "search__heading">Finder</h2>
                 <label class="search__label">Search for a Giphy</label>
                 <input class = "search__input" type="text" placeholder="Search..">
-                <button class="btn">Search</button>
+                <div class = "search__images-container"></div>
+                <button class="button button__search">Search</button>
             </section>
 
             <section class = "trending">
-                <h2>Trending</h2>
+                <h2 class = "trending__heading">Trending</h2>
+                <div class = 'trending__images-container'></div>
             </section>
         </main>
-        
-        
     </body>
 </html>

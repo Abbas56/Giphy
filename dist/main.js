@@ -1,1 +1,146 @@
-(()=>{"use strict";var n={28:(n,e,t)=>{t.d(e,{Z:()=>i});var r=t(81),a=t.n(r),o=t(645),c=t.n(o)()(a());c.push([n.id,"* {\n    box-sizing: border-box;\n    margin: 0;\n    background-color: beige;\n}\n\n.next-button {\n    display: inline-block;\n    outline: none;\n    cursor: pointer;\n    margin-top: 3rem;\n    font-weight: 600;\n    border-radius: 3px;\n    padding: 12px 24px;\n    border: 0;\n    color: #000021;\n    background: #1de9b6;\n    line-height: 1.15;\n    font-size: 3rem;\n\n}\n\n.next-button :hover {\n    transition: all .1s ease;\n    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;\n}\n\n\n.top-div {\n    display: flex;\n    justify-content: center;\n    background-color: black;\n}\n\n.heading {\n    background-color: black;\n    color: aliceblue;\n    font-size: 12em;\n}\n\n.nav-class {\n    display: flex;\n    height: 8rem;\n    justify-content: space-evenly;\n    align-items: center;\n    margin-bottom: 4rem;\n}\n\n\n.nav-class #home-id img:hover, #trending-id img:hover, #search-id img:hover, .next-button:hover{\n    background-color: #ccffff;\n    transition: 1s;\n}\n\n#home-id {\n    height: 100%;\n    padding: 5px;\n    border-top: #ccffff;\n}\n\n#trending-id{\n    height: 100%;\n    padding: 5px;\n    border-top: #ccffff;\n}\n\n#search-id{\n    height: 100%;\n    padding: 5px;\n    border-top: #ccffff;\n}\n\n#homeImg{\n    height: 100%;\n}\n\n#trending-id > img{\n    height: 100%;\n}\n\n#search-id > img{\n    height: 100%;\n}\n\n.gif-container {\n    \n    margin: 12rem 5rem;\n    \n}\n\n/* .next-button{\n    border: 5px solid #ccffff;\n    cursor: pointer;\n    font-size: 5rem;\n    margin-top: 2rem;\n    border-radius: 30px;\n    width: 33%;\n} */\n\n.button-container {\n    display: flex;\n    justify-content: center;\n}\n\n\n.gif {\n    display: flex;\n    object-fit: cover;\n    width: 100%\n}\n\nh2 {\n    margin-bottom: 5rem;\n    font-size: 4rem;\n}\n\n.search__wrapper {\n    display: block;\n    margin: 5rem 5rem;\n    font-size: 3rem;\n}\n.search__input {\n    display: block;\n    padding: 20px;\n    border: 0;\n    border-bottom: 1px solid aliceblue;\n    border-radius: 30px;\n    background-color: rgb(215, 248, 250);\n    font-size: 35pt;\n    margin-top: 1rem;\n    margin-left: 0rem;\n    height: 6rem;\n    width: 53rem;\n    \n}\n\n.many__images__container {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n    margin: 5rem;\n    \n}\n\n.many__images__container img {\n    margin: 2rem;\n    width: 20rem;\n    height: 10rem;\n}\n\np {\n    color: red;\n}\n\n.trending__wrapper {\n    display: block;\n    margin: 5rem 5rem;\n    font-size: 3rem;\n}\n\n.trending__container {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n    margin: 2rem;\n    padding: 0;\n}\n\n.trending__container img {\n    margin: 2rem;\n    width: 20rem;\n    height: 10rem;\n}\n",""]);const i=c},645:n=>{n.exports=function(n){var e=[];return e.toString=function(){return this.map((function(e){var t="",r=void 0!==e[5];return e[4]&&(t+="@supports (".concat(e[4],") {")),e[2]&&(t+="@media ".concat(e[2]," {")),r&&(t+="@layer".concat(e[5].length>0?" ".concat(e[5]):""," {")),t+=n(e),r&&(t+="}"),e[2]&&(t+="}"),e[4]&&(t+="}"),t})).join("")},e.i=function(n,t,r,a,o){"string"==typeof n&&(n=[[null,n,void 0]]);var c={};if(r)for(var i=0;i<this.length;i++){var d=this[i][0];null!=d&&(c[d]=!0)}for(var s=0;s<n.length;s++){var p=[].concat(n[s]);r&&c[p[0]]||(void 0!==o&&(void 0===p[5]||(p[1]="@layer".concat(p[5].length>0?" ".concat(p[5]):""," {").concat(p[1],"}")),p[5]=o),t&&(p[2]?(p[1]="@media ".concat(p[2]," {").concat(p[1],"}"),p[2]=t):p[2]=t),a&&(p[4]?(p[1]="@supports (".concat(p[4],") {").concat(p[1],"}"),p[4]=a):p[4]="".concat(a)),e.push(p))}},e}},81:n=>{n.exports=function(n){return n[1]}},379:n=>{var e=[];function t(n){for(var t=-1,r=0;r<e.length;r++)if(e[r].identifier===n){t=r;break}return t}function r(n,r){for(var o={},c=[],i=0;i<n.length;i++){var d=n[i],s=r.base?d[0]+r.base:d[0],p=o[s]||0,m="".concat(s," ").concat(p);o[s]=p+1;var u=t(m),l={css:d[1],media:d[2],sourceMap:d[3],supports:d[4],layer:d[5]};if(-1!==u)e[u].references++,e[u].updater(l);else{var f=a(l,r);r.byIndex=i,e.splice(i,0,{identifier:m,updater:f,references:1})}c.push(m)}return c}function a(n,e){var t=e.domAPI(e);return t.update(n),function(e){if(e){if(e.css===n.css&&e.media===n.media&&e.sourceMap===n.sourceMap&&e.supports===n.supports&&e.layer===n.layer)return;t.update(n=e)}else t.remove()}}n.exports=function(n,a){var o=r(n=n||[],a=a||{});return function(n){n=n||[];for(var c=0;c<o.length;c++){var i=t(o[c]);e[i].references--}for(var d=r(n,a),s=0;s<o.length;s++){var p=t(o[s]);0===e[p].references&&(e[p].updater(),e.splice(p,1))}o=d}}},569:n=>{var e={};n.exports=function(n,t){var r=function(n){if(void 0===e[n]){var t=document.querySelector(n);if(window.HTMLIFrameElement&&t instanceof window.HTMLIFrameElement)try{t=t.contentDocument.head}catch(n){t=null}e[n]=t}return e[n]}(n);if(!r)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");r.appendChild(t)}},216:n=>{n.exports=function(n){var e=document.createElement("style");return n.setAttributes(e,n.attributes),n.insert(e,n.options),e}},565:(n,e,t)=>{n.exports=function(n){var e=t.nc;e&&n.setAttribute("nonce",e)}},795:n=>{n.exports=function(n){if("undefined"==typeof document)return{update:function(){},remove:function(){}};var e=n.insertStyleElement(n);return{update:function(t){!function(n,e,t){var r="";t.supports&&(r+="@supports (".concat(t.supports,") {")),t.media&&(r+="@media ".concat(t.media," {"));var a=void 0!==t.layer;a&&(r+="@layer".concat(t.layer.length>0?" ".concat(t.layer):""," {")),r+=t.css,a&&(r+="}"),t.media&&(r+="}"),t.supports&&(r+="}");var o=t.sourceMap;o&&"undefined"!=typeof btoa&&(r+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(o))))," */")),e.styleTagTransform(r,n,e.options)}(e,n,t)},remove:function(){!function(n){if(null===n.parentNode)return!1;n.parentNode.removeChild(n)}(e)}}}},589:n=>{n.exports=function(n,e){if(e.styleSheet)e.styleSheet.cssText=n;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(n))}}}},e={};function t(r){var a=e[r];if(void 0!==a)return a.exports;var o=e[r]={id:r,exports:{}};return n[r](o,o.exports,t),o.exports}t.n=n=>{var e=n&&n.__esModule?()=>n.default:()=>n;return t.d(e,{a:e}),e},t.d=(n,e)=>{for(var r in e)t.o(e,r)&&!t.o(n,r)&&Object.defineProperty(n,r,{enumerable:!0,get:e[r]})},t.o=(n,e)=>Object.prototype.hasOwnProperty.call(n,e),t.nc=void 0,(()=>{var n=t(379),e=t.n(n),r=t(795),a=t.n(r),o=t(569),c=t.n(o),i=t(565),d=t.n(i),s=t(216),p=t.n(s),m=t(589),u=t.n(m),l=t(28),f={};async function g(){document.contains(document.querySelector(".search__wrapper"))&&(document.querySelector(".search__wrapper").remove(),document.querySelector(".many__images__container").remove()),document.contains(document.querySelector(".trending__wrapper"))&&(document.querySelector(".trending__wrapper").remove(),document.querySelector(".trending__container").remove());const n=document.createElement("div");n.classList.add("div__wrapper"),document.body.append(n);const e=document.createElement("div");e.classList.add("gif-container"),n.append(e);const t=document.createElement("div");t.classList.add("button-container"),n.append(t);const r=document.createElement("button");r.textContent="Next",r.classList.add("next-button"),t.append(r);const a=document.createElement("img");async function o(){const n=await fetch("https://api.giphy.com/v1/gifs/random?api_key=rZd9UHa9rP1ktS9wWNl92oUkNZ9sZ2Oc&tag=&rating=g");return(await n.json()).data.images.original.url}a.classList.add("gif"),a.src=await o(),e.append(a),r.addEventListener("click",(async()=>{try{a.src=await o()}catch(n){console.log(n)}}))}f.styleTagTransform=u(),f.setAttributes=d(),f.insert=c().bind(null,"head"),f.domAPI=a(),f.insertStyleElement=p(),e()(l.Z,f),l.Z&&l.Z.locals&&l.Z.locals,function(){const n=document.createElement("div");n.classList.add("top-div");const e=document.createElement("h1");e.innerText="GIPHY",document.body.append(n),n.append(e),e.classList.add("heading");const t=document.createElement("nav");t.classList.add("nav-class"),document.body.append(t);const r=document.createElement("btn"),a=document.createElement("btn"),o=document.createElement("btn");r.innerHTML="<img  id = 'homeImg' src='./gallery.png'/>",a.innerHTML="<img id = 'searchImg' src='./search.png'/>",o.innerHTML="<img id = 'trendImg' src='./trending.png'/>",r.setAttribute("id","home-id"),a.setAttribute("id","search-id"),o.setAttribute("id","trending-id"),t.append(r,a,o),a.addEventListener("click",(()=>{!async function(){document.contains(document.querySelector(".div__wrapper"))&&document.querySelector(".div__wrapper").remove(),document.contains(document.querySelector(".trending__wrapper"))&&(document.querySelector(".trending__wrapper").remove(),document.querySelector(".trending__container").remove());const n=document.createElement("div");n.classList.add("search__wrapper"),document.body.append(n);const e=document.createElement("h2");e.innerText="Finder",n.append(e);const t=document.createElement("label");t.innerHTML="Search for a GIF",n.append(t);const r=document.createElement("input");r.type="search",r.placeholder="Enter a GIF",r.classList.add("search__input"),n.append(r);const a=document.createElement("button");a.textContent="Search",a.classList.add("next-button"),n.append(a);const o=document.createElement("div");o.classList.add("many__images__container"),document.body.append(o),a.addEventListener("click",(async()=>{o.innerHTML="";const e=document.getElementsByClassName("search__input")[0].value;if(""==e)return function(){let e=document.createElement("p");e.innerHTML="Enter a search term please",n.append(e)}();const t=[];try{const n=await async function(n){const e=await fetch(`https://api.giphy.com/v1/gifs/search?api_key=rZd9UHa9rP1ktS9wWNl92oUkNZ9sZ2Oc&tag=&rating=g&q=",${n},"&limit=6`),t=await e.json();return await t}(e);n.data.forEach((n=>{t.push(n.images.downsized.url)}))}catch(n){console.log(n)}for(let n=0;n<6;n++){let e=document.createElement("img");e.classList.add("gif"),e.src=t[n],o.append(e)}}))}()})),r.addEventListener("click",(()=>{g()})),o.addEventListener("click",(()=>{!async function(){document.contains(document.querySelector(".div__wrapper"))&&document.querySelector(".div__wrapper").remove(),document.contains(document.querySelector(".search__wrapper"))&&(document.querySelector(".search__wrapper").remove(),document.querySelector(".many__images__container").remove());const n=document.createElement("div");n.classList.add("trending__wrapper"),document.body.append(n);const e=document.createElement("h2");e.innerHTML="Trending",n.append(e);const t=document.createElement("div");t.classList.add("trending__container"),document.body.append(t);const r=[];try{(await async function(){const n=await fetch("https://api.giphy.com/v1/gifs/trending?api_key=rZd9UHa9rP1ktS9wWNl92oUkNZ9sZ2Oc&rating=g&limit=20"),e=await n.json();return await e}()).data.forEach((n=>{r.push(n.images.downsized.url)}))}catch(n){console.log(n)}for(let n=0;n<20;n++){let e=document.createElement("img");e.classList.add("gif"),e.src=r[n],t.append(e)}}()}))}(),g()})()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/displayHome.js":
+/*!****************************!*\
+  !*** ./src/displayHome.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ displayHome)\n/* harmony export */ });\nasync function displayHome() {\n  const nextButton = document.querySelector('.button__random');\n  const rand = document.querySelector('.random');\n  const gif = document.createElement('img');\n  gif.classList.add(\"gif\");\n  gif.src = await getRandomGif();\n  rand.insertBefore(gif, nextButton);\n\n  //when I press next, immediately display the loading svg!!!\n\n  function errorHandler() {\n    if (document.querySelector('.home__error-message') == null) {\n      const errorMsg = document.createElement('div');\n      errorMsg.classList.add('home__error-message');\n      errorMsg.innerHTML = 'Oh no, something went snap!';\n      rand.insertBefore(errorMsg, nextButton);\n    }\n  }\n  async function getRandomGif() {\n    try {\n      const res = await fetch(\"https://api.giphy.com/v1/gifs/random?api_key=rZd9UHa9rP1ktS9wWNl92oUkNZ9sZ2Oc&tag=&rating=g\");\n      const data = await res.json();\n      const imgUrl = data.data.images.original.url;\n      return imgUrl;\n    } catch {\n      errorHandler();\n      gif.classList.remove('gif');\n      gif.classList.add('home-error-gif');\n      return 'error-svgrepo-com.svg';\n    }\n  }\n  nextButton.addEventListener('click', async () => {\n    gif.src = \"https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif\";\n    gif.src = await getRandomGif();\n  });\n}\n\n//# sourceURL=webpack://my-webpack-project/./src/displayHome.js?");
+
+/***/ }),
+
+/***/ "./src/displayRandom.js":
+/*!******************************!*\
+  !*** ./src/displayRandom.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ returnDisplayrandom)\n/* harmony export */ });\nfunction returnDisplayrandom() {\n  const searchSection = document.querySelector('.search');\n  searchSection.classList.add('inactive');\n  const trendingSection = document.querySelector('.trending');\n  trendingSection.classList.add('inactive');\n  const randomSection = document.querySelector('.random');\n  const random_li = document.querySelector('.navigation__random-li');\n  const search_li = document.querySelector('.navigation__search-li');\n  const trending_li = document.querySelector('.navigation__trending-li');\n  if (!random_li.classList.contains('--active')) {\n    random_li.classList.add('--active');\n  }\n  if (search_li.classList.contains('--active')) {\n    search_li.classList.remove('--active');\n    searchSection.classList.add('inactive');\n    randomSection.classList.remove('inactive');\n  }\n  if (trending_li.classList.contains('--active')) {\n    trending_li.classList.remove('--active');\n    trendingSection.classList.add('inactive');\n    randomSection.classList.remove('inactive');\n  }\n}\n\n//# sourceURL=webpack://my-webpack-project/./src/displayRandom.js?");
+
+/***/ }),
+
+/***/ "./src/displaySearch.js":
+/*!******************************!*\
+  !*** ./src/displaySearch.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ displaySearch)\n/* harmony export */ });\nasync function displaySearch() {\n  const searchSection = document.querySelector('.search');\n  const trendingSection = document.querySelector('.trending');\n  const randomSection = document.querySelector('.random');\n  const random_li = document.querySelector('.navigation__random-li');\n  const search_li = document.querySelector('.navigation__search-li');\n  const trending_li = document.querySelector('.navigation__trending-li');\n  if (search_li.classList.contains('--active')) {} else if (random_li.classList.contains('--active')) {\n    random_li.classList.remove('--active');\n    randomSection.classList.add('inactive');\n    search_li.classList.add('--active');\n    searchSection.classList.remove('inactive');\n  } else if (trending_li.classList.contains('--active')) {\n    trending_li.classList.remove('--active');\n    trendingSection.classList.add('inactive');\n    search_li.classList.add('--active');\n    searchSection.classList.remove('inactive');\n  }\n}\n\n//# sourceURL=webpack://my-webpack-project/./src/displaySearch.js?");
+
+/***/ }),
+
+/***/ "./src/displayTrending.js":
+/*!********************************!*\
+  !*** ./src/displayTrending.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ returnTrendingGif)\n/* harmony export */ });\nfunction returnTrendingGif() {\n  const searchSection = document.querySelector('.search');\n  const trendingSection = document.querySelector('.trending');\n  const randomSection = document.querySelector('.random');\n  const random_li = document.querySelector('.navigation__random-li');\n  const search_li = document.querySelector('.navigation__search-li');\n  const trending_li = document.querySelector('.navigation__trending-li');\n  if (!trending_li.classList.contains('--active')) {\n    trending_li.classList.add('--active');\n  }\n  if (search_li.classList.contains('--active')) {\n    search_li.classList.remove('--active');\n    searchSection.classList.add('inactive');\n    trendingSection.classList.remove('inactive');\n  }\n  if (random_li.classList.contains('--active')) {\n    random_li.classList.remove('--active');\n    randomSection.classList.add('inactive');\n    trendingSection.classList.remove('inactive');\n  }\n}\n\n//# sourceURL=webpack://my-webpack-project/./src/displayTrending.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _displayHome__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./displayHome */ \"./src/displayHome.js\");\n/* harmony import */ var _displayRandom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./displayRandom */ \"./src/displayRandom.js\");\n/* harmony import */ var _displaySearch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displaySearch */ \"./src/displaySearch.js\");\n/* harmony import */ var _displayTrending__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./displayTrending */ \"./src/displayTrending.js\");\n/* harmony import */ var _returnSearchGif__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./returnSearchGif */ \"./src/returnSearchGif.js\");\n/* harmony import */ var _returnTrendingGif__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./returnTrendingGif */ \"./src/returnTrendingGif.js\");\n\n\n\n\n\n\ndocument.querySelector('.search').classList.add('inactive');\ndocument.querySelector('.trending').classList.add('inactive');\nconst randButton = document.querySelector('.button__nav-random');\nconst searchButton = document.querySelector('.button__nav-search');\nconst trendingButton = document.querySelector('.button__nav-trending');\nrandButton.addEventListener('click', () => {\n  (0,_displayRandom__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\nsearchButton.addEventListener('click', () => {\n  (0,_displaySearch__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n});\ntrendingButton.addEventListener('click', () => {\n  (0,_displayTrending__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n});\n(0,_displayHome__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_returnTrendingGif__WEBPACK_IMPORTED_MODULE_5__[\"default\"])();\nconst searchQueryButton = document.querySelector('.button__search');\nsearchQueryButton.addEventListener('click', () => {\n  (0,_returnSearchGif__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n});\n\n//# sourceURL=webpack://my-webpack-project/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/returnSearchGif.js":
+/*!********************************!*\
+  !*** ./src/returnSearchGif.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ returnSearchGifs)\n/* harmony export */ });\nasync function returnSearchGifs() {\n  const imagesContainer = document.querySelector('.search__images-container');\n  imagesContainer.innerHTML = '';\n  function errorhandler() {\n    if (!document.querySelector('.search__error-message')) {\n      const errorMsg = document.createElement('div');\n      errorMsg.classList.add('search__error-message');\n      errorMsg.innerHTML = 'Oh no, something went snap! Try a different search term';\n      imagesContainer.append(errorMsg);\n      imagesContainer.classList.add('inactive');\n    }\n  }\n  async function getSearchGif(searchTerm) {\n    try {\n      const res = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=rZd9UHa9rP1ktS9wWNl92oUkNZ9sZ2Oc&tag=&rating=g&q=\",${searchTerm},\"&limit=6`);\n      const data = await res.json();\n      const imgUrl = await data;\n      return imgUrl;\n    } catch {\n      errorhandler();\n    }\n  }\n  const searchTerm = document.getElementsByClassName('search__input')[0].value;\n  let urls = [];\n  let titles = [];\n  const result = await getSearchGif(searchTerm);\n  if (result.data.length == 0) {\n    errorhandler();\n  } else {\n    result.data.forEach(data => {\n      urls.push(data.images.downsized.url);\n      titles.push(data.title);\n    });\n    for (let i = 0; i < 6; i++) {\n      let img = document.createElement('img');\n      img.classList.add('gif');\n      img.src = urls[i];\n      img.alt = titles[i];\n      imagesContainer.append(img);\n    }\n  }\n}\n\n//# sourceURL=webpack://my-webpack-project/./src/returnSearchGif.js?");
+
+/***/ }),
+
+/***/ "./src/returnTrendingGif.js":
+/*!**********************************!*\
+  !*** ./src/returnTrendingGif.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getTrendingGifs)\n/* harmony export */ });\nasync function getTrendingGifs() {\n  const imagesContainer = document.querySelector('.trending__images-container');\n  function errorHandler() {\n    if (document.querySelector('.trending__error-message') == null) {\n      const errorMsg = document.createElement('div');\n      errorMsg.classList.add('trending__error-message');\n      errorMsg.innerHTML = 'Oh no, something went snap!';\n      imagesContainer.append(errorMsg);\n    }\n  }\n  async function getTrendingGifs() {\n    try {\n      const res = await fetch(\"https://api.giphy.com/v1/gifs/trending?api_key=rZd9UHa9rP1ktS9wWNl92oUkNZ9sZ2Oc&rating=g&limit=20\");\n      const data = await res.json();\n      const imgUrl = await data;\n      return imgUrl;\n    } catch {\n      errorHandler();\n    }\n  }\n  const urls = [];\n  const titles = [];\n  const result = await getTrendingGifs();\n  result.data.forEach(data => {\n    urls.push(data.images.downsized.url);\n    titles.push(data.title);\n  });\n  for (let i = 0; i < 20; i++) {\n    let img = document.createElement('img');\n    img.classList.add('gif');\n    img.src = urls[i];\n    img.alt = titles[i];\n    imagesContainer.append(img);\n  }\n}\n\n//# sourceURL=webpack://my-webpack-project/./src/returnTrendingGif.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;

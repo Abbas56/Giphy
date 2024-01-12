@@ -4,20 +4,20 @@
     background-color: beige;
 }
 
-h1 {
+.title {
     text-align: center;
     color: white;
     background-color: #000021;
     font-size: 8rem;
 }
 
-h2 {
+.random__heading, .search__heading, .trending__heading {
     margin-bottom: 5rem;
     font-size: 4rem;
 }
 
 
-ul {
+.navigation {
     margin-top: 2rem;
     display: flex;
     list-style-type: none;
@@ -26,25 +26,16 @@ ul {
     justify-content: space-evenly;
 }
 
-li {
-    display: inline;
-    float: left;
-}
-
-li img {
+.navigation img {
     width: 4rem;
 }
 
-li a:hover {
-    background-color: #111;
-}
-
-.random__button, .search__button, .trending__button {
-    border: none;
-}
-
-.active {
+.--active {
     border: 5px solid #1de9b6;
+}
+
+.inactive {
+    display: none;
 }
 
 section {
@@ -52,10 +43,16 @@ section {
     flex-direction: column;
     margin-top: 2rem;
     margin-left: 2rem;
+    margin-right: 2rem;
+    
 }
 
-.btn {
-    display: inline-block;
+.button {
+    border: none;
+}
+
+.button__search, .button__random {
+    align-self: center;
     outline: none;
     cursor: pointer;
     margin-top: 3rem;
@@ -70,22 +67,13 @@ section {
     width: 14rem;
 }
 
-.next-button :hover {
+
+
+.button__random :hover {
     transition: all .1s ease;
     box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 }
 
-.random {
-    
-}
-
-.search {
-    
-}
-
-.trending {
-    
-}
 
 .search__input {
     display: block;
@@ -97,6 +85,7 @@ section {
     font-size: 35pt;
     margin-top: 1rem;
     margin-left: 0rem;
+    margin-right: 2rem;
     height: 6rem;
     width: 53rem;
     
@@ -106,6 +95,59 @@ section {
 
     font-size: 2rem;
 }
+
+.search__images-container {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.search__images-container img {
+    margin: 1rem;
+    width: 40%;
+}
+
+.trending__images-container {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.trending__images-container img {
+    margin: 1rem;
+    width: 40%;
+}
+
+.gif {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif) no-repeat center;
+}
+
+.home__error-gif {
+    align-self: center;
+    width: 20%;
+}
+
+.home__error-message {
+    align-self: center;
+    font-size: 4rem;
+    color: red;
+    margin: 1rem;
+}
+
+.search__error-message {
+    font-size: 4rem;
+    color: red;
+    margin: 1rem;
+}
+
+.trending__error-message {
+    font-size: 4rem;
+    color: red;
+    margin: 1rem;
+}
+
 
 @media (min-width: 1250px) { 
     
@@ -117,19 +159,34 @@ section {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-    
     }
 
     .random {
+        display: flex;
         flex: 1;
+        border-right: thick solid #32a1ce
     }
 
     .search {
+        display: flex;
         flex: 1;
+        border-right: thick solid #32a1ce
     }
 
     .trending {
-        flex: 1;
+        display: flex;
+        flex: 1
+    }
+
+    .random img {
+        align-self: center;
+        width: 80%;
+        min-height: 30rem;
+    }
+
+
+    .gif {
+        background: url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif) no-repeat center;
     }
 
 }
