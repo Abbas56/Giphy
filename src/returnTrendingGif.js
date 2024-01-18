@@ -1,8 +1,8 @@
 require('dotenv').config();
 
 export default async function getTrendingGifs() {
-
     const imagesContainer = document.querySelector('.trending__images-container');
+    const limit = 20;
 
     function errorHandler() {
         if (document.querySelector('.trending__error-message') == null) {
@@ -15,7 +15,7 @@ export default async function getTrendingGifs() {
 
     async function getTrendingGifs() {
         try {
-            const res = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${process.env.API_KEY}&rating=g&limit=20`);
+            const res = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${process.env.API_KEY}&rating=g&limit=${limit}`);
             const data = await res.json();
             return data;
         }
