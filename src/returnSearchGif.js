@@ -1,5 +1,8 @@
-export default async function returnSearchGifs() {
+require('dotenv').config();
 
+export default async function returnSearchGifs(event) {
+
+    event.preventDefault();
     const imagesContainer = document.querySelector('.search__images-container');
     imagesContainer.innerHTML = '';
 
@@ -13,9 +16,9 @@ export default async function returnSearchGifs() {
         }
     }
 
-    async function getSearchGif(searchTerm) {
+    async function getSearchGif(searchTerm, limit) {
         try {
-            const res = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=rZd9UHa9rP1ktS9wWNl92oUkNZ9sZ2Oc&tag=&rating=g&q=",${searchTerm},"&limit=6`);
+            const res = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&tag=&rating=g&q=${searchTerm}&limit=${limit}`);
             const data = await res.json();
             const imgUrl = await data;
             return imgUrl;
@@ -25,25 +28,19 @@ export default async function returnSearchGifs() {
     }
 
     const searchTerm = document.getElementsByClassName('search__input')[0].value;
+    const limit = 8;
 
-    let urls = [];
-    let titles = [];
-    const result = await getSearchGif(searchTerm);
+    const result = await getSearchGif(searchTerm, limit);
     if (result.data.length == 0) {
         errorhandler();
     }
     else {
         result.data.forEach(data => {
-            urls.push(data.images.downsized.url);
-            titles.push(data.title);
-        });
-            
-        for (let i = 0; i < 6; i++) {
             let img = document.createElement('img');
             img.classList.add('gif');
-            img.src = urls[i];
-            img.alt = titles[i];
+            img.src = data.images.downsized.url;
+            img.alt = data.title;
             imagesContainer.append(img);
-        }
+        });
     }
 }

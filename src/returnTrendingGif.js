@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 export default async function getTrendingGifs() {
 
     const imagesContainer = document.querySelector('.trending__images-container');
@@ -12,31 +14,22 @@ export default async function getTrendingGifs() {
     }
 
     async function getTrendingGifs() {
-
         try {
-            const res = await fetch("https://api.giphy.com/v1/gifs/trending?api_key=rZd9UHa9rP1ktS9wWNl92oUkNZ9sZ2Oc&rating=g&limit=20");
+            const res = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${process.env.API_KEY}&rating=g&limit=20`);
             const data = await res.json();
-            const imgUrl = await data;
-            return imgUrl;
+            return data;
         }
         catch {
             errorHandler();
         }
     }
-
-    const urls = [];
-    const titles = [];
     
     const result = await getTrendingGifs();
     result.data.forEach(data => {
-        urls.push(data.images.downsized.url);
-        titles.push(data.title);
-    });
-    for (let i = 0; i < 20; i++) {
         let img = document.createElement('img');
         img.classList.add('gif');
-        img.src = urls[i];
-        img.alt = titles[i];
+        img.src = data.images.downsized.url;
+        img.alt = data.title;
         imagesContainer.append(img);
-    }
+    });    
 }
